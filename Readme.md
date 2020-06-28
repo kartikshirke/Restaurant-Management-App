@@ -1,6 +1,6 @@
-Demo link: https://restaurant-app-react.netlify.app/
+#Demo link: https://restaurant-app-react.netlify.app/
 
-# Bob's Restaurant App
+## Bob's Restaurant App
 
 For this assessment I have created a small App that will help Bob manage his restaurant. No need for a login system. The App features include:
 
