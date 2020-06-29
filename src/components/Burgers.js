@@ -78,7 +78,7 @@ class Burgers extends React.Component {
 }
 class SearchBar extends React.Component {
   handleChange = () => {
-    this.props.onUserInput(this.refs.filterTextInput.value);
+    this.props.onUserInput(this.refs.filterTextInput.value.charAt(0).toUpperCase() + this.refs.filterTextInput.value.slice(1));
   }
   render() {
     return (
@@ -142,7 +142,7 @@ class ProductRow extends React.Component {
       <tr className="eachRow">
         <EditableCell onProductTableUpdate={this.props.onProductTableUpdate} cellData={{
           "type": "name",
-          value: this.props.product.name,
+          value: this.props.product.name.replace(/['"]+/g, ''),
           id: this.props.product.id
         }} />
         <EditableCell onProductTableUpdate={this.props.onProductTableUpdate} cellData={{
